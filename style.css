@@ -1,0 +1,189 @@
+:root {
+
+    /* CORES */
+
+    --cor-primaria: #198754;
+    --cor-secundaria: #14532d;
+    --cor-fundo: #f3f4f6;
+    --cor-card: #ffffff;
+    --cor-texto: #1f2937;
+    --cor-texto-claro: #ffffff;
+
+    /* CONFIGURAÇÕES */
+
+    --fonte-principal: Arial, Helvetica, sans-serif;
+
+    --borda: 12px;
+
+    --sombra:
+        0 2px 4px rgba(0,0,0,0.1);
+
+    --transicao: 0.3s;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+
+    font-family: var(--fonte-principal);
+
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--cor-primaria);
+
+    color: var(--cor-texto-claro);
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: var(--cor-secundaria);
+
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: var(--transicao);
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+/* MAIN */
+
+main {
+    padding: 20px;
+}
+
+/* CARDS */
+
+.card {
+    background-color: var(--cor-card);
+
+    padding: 20px;
+
+    border-radius: var(--borda);
+
+    box-shadow: var(--sombra);
+}
+
+/* BOTÕES */
+
+button {
+    background-color: var(--cor-primaria);
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 16px;
+
+    border-radius: var(--borda);
+
+    cursor: pointer;
+
+    transition: var(--transicao);
+}
+
+button:hover {
+    background-color: var(--cor-secundaria);
+}
+
+/* IMAGENS */
+
+img {
+    max-width: 100%;
+
+    display: block;
+
+    border-radius: var(--borda);
+}
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+}
+
+/* LISTAS */
+
+ul {
+    list-style: none;
+}
+
+/* GRID */
+
+.grid {
+    display: grid;
+
+    gap: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: var(--cor-secundaria);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 30px;
+}
+
+/* MOBILE FIRST */
+
+@media (min-width: 768px) {
+
+    .grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
