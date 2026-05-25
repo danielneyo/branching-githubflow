@@ -102,6 +102,8 @@ Após aprovação, as alterações são integradas na branch principal.
 
 ## Estrutura do Projeto
 
+- contato.html → Página contato
+- githubflow.html → Página Git flow
 - index.html → Página inicial
 - sobre.html → Página sobre
 - style.css → Arquivo de estilização
